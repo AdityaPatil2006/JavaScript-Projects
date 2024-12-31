@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <form name="calcForm" onsubmit="return false;">
+            <div class="display">
+                <input type="text" id="display" name="display" aria-label="Calculator display" readonly>
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="clearDisplay()" class="operator" aria-label="Clear all">
+                <input type="button" value="DE" onclick="deleteLastChar()" class="operator" aria-label="Delete last character">
+                <input type="button" value="." onclick="appendToDisplay('.')" class="operator" aria-label="Decimal point">
+                <input type="button" value="/" onclick="appendToDisplay('/')" class="operator" aria-label="Divide">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="appendToDisplay('7')" aria-label="7">
+                <input type="button" value="8" onclick="appendToDisplay('8')" aria-label="8">
+                <input type="button" value="9" onclick="appendToDisplay('9')" aria-label="9">
+                <input type="button" value="*" onclick="appendToDisplay('*')" class="operator" aria-label="Multiply">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="appendToDisplay('4')" aria-label="4">
+                <input type="button" value="5" onclick="appendToDisplay('5')" aria-label="5">
+                <input type="button" value="6" onclick="appendToDisplay('6')" aria-label="6">
+                <input type="button" value="-" onclick="appendToDisplay('-')" class="operator" aria-label="Subtract">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="appendToDisplay('1')" aria-label="1">
+                <input type="button" value="2" onclick="appendToDisplay('2')" aria-label="2">
+                <input type="button" value="3" onclick="appendToDisplay('3')" aria-label="3">
+                <input type="button" value="+" onclick="appendToDisplay('+')" class="operator" aria-label="Add">
+            </div>
+            <div>
+                <input type="button" value="00" onclick="appendToDisplay('00')" aria-label="Double zero">
+                <input type="button" value="0" onclick="appendToDisplay('0')" aria-label="0">
+                <input type="button" value="=" onclick="calculate()" class="equal operator" aria-label="Equals">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
