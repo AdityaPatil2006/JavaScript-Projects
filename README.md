@@ -31,7 +31,6 @@ The projects are organized as follows:
 ---
 
 ## 🚀 Features
-- **Responsive Design:** Works seamlessly on desktops, tablets, and mobile devices.
 - **Project Categorization:** Projects are grouped into relevant categories for easy navigation.
 - **Live Previews:** Each project is accessible with a direct link for live demonstrations.
 
@@ -47,13 +46,5 @@ The projects are organized as follows:
 ## 📜 How to Use
 1. Visit the [JavaScript Projects Web](https://adityapatil2006.github.io/JavaScript-Projects/JS%20Projects%20Web/).
 2. Browse through the categories to find interesting projects.
-3. Click on a project to view its live demo.
-4. Explore the code to learn more about its implementation.
-
----
-
-## 🛠️ Local Setup
-To run the website locally:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AdityaPatil2006/JavaScript-Projects.git
+3. Click on view button present on project card to view its live demo.
+4. Click on code button present on project card to explore the code to learn more about its implementation.
