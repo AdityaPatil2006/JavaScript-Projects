@@ -1,0 +1,337 @@
+*{
+  padding: 5px 20px;
+  margin: 0;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Kokoro', cursive;
+  background-color: #1E1E1E;
+  color: white;
+}
+
+body{
+  /* width: 100%; */
+  height: 100%;
+}
+/* Navbar Starts Here */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+  transition: transform 1s;
+  cursor: pointer;
+}
+.logo h1:hover{
+  transform: scale(1.2);
+}
+.navbar .contents{
+  background-color:#4B4B4B;
+  height: 35px;
+  width: 590px;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar a {
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  position: relative; 
+  transition: transform 1s;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+  scale: 1.1;
+  transform: scale(1.0);
+}
+
+.navbar a::after {
+  content: ''; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: white;
+  transition: width 0.3s ease; 
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.theme{
+  background-color:#4B4B4B;
+  height: 35px; 
+  width: 60px; 
+  border: none;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.theme i{
+  background: transparent;
+  transition: transform 1s;
+}
+.theme i:hover{
+  transform: scale(1.5);
+}
+
+/* Navbar Ends Here */
+
+/* Home Starts Here */
+
+.home{
+  display: flex;
+  padding: 100px 50px;
+}
+.home .content{
+  margin-top: 50px;
+}
+.home .content h1{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
+}
+.home .content p{
+  font-family: 'Lisu Bosa', cursive;
+  width: 70%;
+  font-size: 20px;
+}
+.home .content .btn {
+  border: none;
+  background-color: #4B4B4B;
+  height: 35px;
+  width: 160px;
+  border-radius: 21px;
+  font-family: 'Lisu Bosa', cursive;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3px 0px;
+  margin-left: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.home a{
+  text-decoration: none;
+}
+
+.home .content .btn:hover {
+  background-color: #6C6C6C;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home .content .btn i {
+  background: transparent;
+}
+
+/* Home Ends Here */
+
+/* Card CSS Starts Here*/
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#card {
+  width: 300px;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  margin-left: -39px;
+  background: transparent;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 20px;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons .btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.buttons .btn:first-child {
+  background-color: #007BFF;
+  color: white;
+}
+
+.buttons .btn:first-child:hover {
+  background-color: #0056b3;
+}
+
+.buttons .btn:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+.buttons .btn:last-child:hover {
+  background-color: #495057;
+}
+
+/* Card CSS Ends Here */
+
+/* Main Project Section */
+
+.main-project {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 44px;
+}
+
+.main-project h1 {
+  font-family: 'Kotta One', serif;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+/* Main Project Ends Here */
+
+/* Mini Project Starts Here */
+
+.mini-project {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 44px;
+}
+
+.mini-project h1 {
+  font-family: 'Kotta One', serif;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+/* Mini Project Ends Here */
+
+/* API Project Starts Here */
+
+.api-project {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 44px;
+}
+
+.api-project h1 {
+  font-family: 'Kotta One', serif;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+/* API Project Ends Here */
+
+/* Footer Starts Here */
+
+.footer {
+  /* background-color: red; */
+  color: #fff;
+  text-align: center;
+  width: 1478px;
+  height: 100%;
+  margin-left: -39px;
+  margin-top: 30px;
+}
+
+.footer-content {
+  /* margin: 0 auto; */
+  display: flex;
+  background-color: rgb(56, 53, 53);
+  justify-content: space-between;
+  align-items: center;
+  width: 1497px;
+  margin-left: -39px;
+  height: 100%;
+}
+
+.footer p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  background: transparent;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+  background: transparent;
+}
+
+.footer-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+  background: transparent;
+
+}
+
+.footer-links a:hover {
+  transform: scale(1.2);
+}
+
+.footer-links i {
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+/* Footer Ends Here */
