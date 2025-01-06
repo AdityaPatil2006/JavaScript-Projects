@@ -15,6 +15,13 @@ This website is designed to display my JavaScript projects in a clean and organi
 
 ---
 
+## 🖼️ Sneak Peek
+Here’s a sneak peek of the homepage:
+
+![Sneak Peek of Homepage](https://github.com/AdityaPatil2006/JavaScript-Projects/blob/main/JS%20Projects%20Web/assets/Home.png)
+
+---
+
 ## 📂 Folder Structure
 The projects are organized as follows:
 - **Main Projects:** Large-scale JavaScript applications.
